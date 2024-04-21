@@ -1,0 +1,59 @@
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.task-item.done {
+  background-color: #f0f0f0;
+  text-decoration: line-through;
+  color: #888;
+}
+
+.task-text {
+  flex-grow: 1;
+  cursor: pointer;
+}
+
+.task-actions {
+  display: flex;
+  align-items: center;
+}
+
+.task-actions button {
+  background-color: transparent;
+  border: none;
+  color: #888;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.task-actions button:hover {
+  color: #333;
+}
+
+.task-actions .done-button.checked {
+  color: #4caf50;
+}
+
+.task-actions .edit-button {
+  color: #2196f3;
+}
+
+.task-actions .remove-button {
+  color: #f44336;
+}
+
+.task-actions input[type='text'] {
+  flex-grow: 1;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
